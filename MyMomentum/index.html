@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MyMomentum</title>
+  </head>
+  <body>
+    <form id="login-form">
+      <!-- form required 조합 또는 type='submit' 의 경우 자동으로 submit 되며  새로고침이 진행됨. -->
+      <input
+        required 
+        maxlength="15"
+        type="text"
+        placeholder="Your name is ..."
+        class="login"
+      />
+      <button type="submit">login</button>
+    </form>
+    <form class="hidden" id="weather">
+      <div class="temporature">
+        <img></img>
+        <span></span>
+      </div>
+      <div class="location"></div>
+    </form>
+    <form class="hidden" id="quote">
+      <div class="word"></div>
+      <div class="author"></div>
+    </form>
+    <form class="hidden" id="clock">
+      <div class="date">
+        <h2></h2>
+      </div>
+      <div class="clock">
+        <h1></h1>
+      </div>
+    </form>
+    <form class="hidden" id="todo-form">
+      <div>What is your main goals for today?</div>
+      <input type="text" class="underline" />
+    </form>
+    <ul class="hidden" id="todos"></ul>
+    <form id="greetings">
+      <div class="greetings hidden"></div>
+    </form>
+    <script src="js/background.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/greetings.js"></script>
+  </body>
+</html>
